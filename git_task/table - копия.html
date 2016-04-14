@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>l4</title>
+	<script>
+	var chance = 4;
+	var p = 'qwerty';
+	  for(var i=0;i<=4;i++){
+		var pass = prompt('enter the password');
+		if(pass == p){
+		alert('welcome to site');
+			 break;
+		}
+		else if(pass != 'qwerty'){
+			if(chance > 0){
+			alert('you have ' + chance + 'chanses');
+			}
+			else{
+				alert('try again later');
+			}
+		}
+		chance--;
+		 
+	  }
+	 
+	</script>
+</head>
+<body>
+
+</body>
+</html>
