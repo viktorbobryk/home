@@ -90,9 +90,7 @@ header div a:hover{
 /***************************
 === PROMO SECTION ===
 ***************************/
-div .mainpart{
-	border-left:1px solid black;
-}
+
 .promo-section {
 	background-image: url(../images/backgr-front.png), url("../images/backgr-back.png");
 	background-position:center,left top;
@@ -194,7 +192,6 @@ main .main-section .conten{
 	width:80%;
 	margin-left:7%;
 	margin-right:13%;
-	border:	10px solid black;
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	
@@ -204,7 +201,6 @@ main .conten .fest{
 	height:340px;
 	background:url(../images/layer5.png) top no-repeat;
 	background-size:cover;
-	
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	position:relative;
@@ -212,9 +208,9 @@ main .conten .fest{
 main .conten .fest .prod-title{
 	position:absolute;
 	bottom:12px;
-	left:1.5%;
-	right:1.5%;
-	width:97%;
+	left:1%;
+	right:1%;
+	width:98%;
 	height:50px;
 	background:rgba(43, 44, 38, 0.7);
 	display:table;
@@ -520,5 +516,21 @@ footer a{
 }
 
 @media screen and (max-width: 1240px) {
- 
+ .sort{
+	display:inline-block;
+	padding-top:10px;
+	margin-left:25px;
+	border:1px solid black;
+}
+.sort-row{
+	display:block;
+	margin:5px;
+}
+.sort div:first-child{
+	padding-left:20px;
+}
+.sort div:last-child{
+	position:absolute;
+	right:15%;
+}
   }
