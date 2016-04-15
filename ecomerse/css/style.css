@@ -192,6 +192,7 @@ main .main-section .conten{
 	width:80%;
 	margin-left:7%;
 	margin-right:13%;
+	border:4px solid black;
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	
@@ -256,7 +257,7 @@ main .container div:nth-child(2){
 	height:280px;
 	position:absolute;
 	bottom:29px;
-	right:10%;
+	right:7%;
 }
 main .container div:last-child{
 	position:inline-block;
@@ -264,13 +265,14 @@ main .container div:last-child{
 	height:250px;
 	position:absolute;
 	bottom:20px;
-	right:38%;
+	right:32%;
 }
 /***************************
 === SIDEBAR SECTION ===
 ***************************/
  .sidebar{
 	width:21%;
+	min-width:166px;
 	margin-left:12px;
 	position:relative;
 	float:left;
@@ -441,9 +443,11 @@ hr{
 	padding-left: 13px;
 }
 .f-prod{
-	margin:7px;
+	margin:10px;
 	border:1px solid black;
 	border-radius:5px;
+	position:relative;
+	padding:13px 18px 13px 13px;
 }
 
 .f-prod .thumb h3 {
@@ -493,6 +497,23 @@ margin-left: 10px;
 	color:#ffffff;
 	font-weight:bold;
 }
+.f-prod .button-left{
+	position:absolute;
+	left:-15px;
+	top:50%;
+}
+.f-prod .button-right{
+	position:absolute;
+	right:0px;
+	top:50%;
+}
+.f-prod .button-left img{
+	width:35px;
+}
+.f-prod .button-right img{
+	width:35px;
+}
+
 /***************************
 === FOOTER ===
 ***************************/
@@ -515,7 +536,7 @@ footer a{
 	display:table-cell;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1024px) {
  .sort{
 	display:inline-block;
 	padding-top:10px;
@@ -532,5 +553,25 @@ footer a{
 .sort div:last-child{
 	position:absolute;
 	right:15%;
+}
+.fest .container div:last-child{
+	display:none;
+}
+header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:40px;
+}
+.promo-section {
+	background-image: url(../images/backgr-front.png), url("../images/backgr-back.png");
+	background-position:center,left top;
+	position: relative;
+	width: 100%;
+	height: 150px;
+	padding-left:10%;
+	-webkit-background-size: cover;
+		-o-background-size: cover;
+			background-size: cover;
 }
   }
